@@ -1,30 +1,29 @@
 
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: lightblue;
-  background-image: url(https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMTgtd2FuLTAzXzEuanBn.jpg);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  font-family: Helvetica, sans-serif;
+  background-color: #e7ceff;
+  text-align: center;
 }
 
 /* Style the top navigation bar */
 .topnav {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #333;
-  text-align: center;
+  position: absolute;
+  width: 100vw;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -39,8 +38,8 @@ body {
 /* Style the content */
 .main {
   background-color: #ddd;
-  padding: 10px;
-  height: 200px; 
+  padding: 50px 0;
+  height: 150px; 
   text-align: center;
 }
 
