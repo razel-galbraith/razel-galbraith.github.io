@@ -7,12 +7,17 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+  background-image: url(https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMTgtd2FuLTAzXzEuanBn.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
 }
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #333;
+  text-align: center;
 }
 
 /* Style the topnav links */
@@ -36,6 +41,7 @@ body {
   background-color: #ddd;
   padding: 10px;
   height: 200px; 
+  text-align: center;
 }
 
 /* Style the footer */
