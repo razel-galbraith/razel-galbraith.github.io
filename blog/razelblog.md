@@ -22,3 +22,15 @@ I can make an images directory.
 ### Do I also want the style to be applied to all of my blog entries?
 
 I see it having one cohesive style throughout the website so there is continuity between the blog entries.
+
+Learning Competencies:
+
+[x] Set up a basic HTML page with the appropriate tags (HTML, head, title, etc.)
+[x] Add paragraphs, headings, links, images, lists, and/or tables
+[x] Divide content on a page using divs and spans
+[x] Include a viewport meta tag in your HTML files
+[x] Use media queries in a CSS file to change the page layout for mobile (320px), tablet (768px) and desktop (1200px+) screen sizes
+[x] Link an external stylesheet to an HTML document
+[x] Position elements using CSS
+[x] Modify element style (size, color, etc) using CSS
+[x] Use classes and ids to manipulate elements
