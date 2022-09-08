@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
     <title>Technical Blog</title>
     
-<body>
+
     
   <nav>
     <ul class="topnav">
@@ -25,38 +25,33 @@
       <h3>What are Margins, Borders, and Padding in CSS?</h3>
     </div>
 
-  <div class="container">
-    <table>
-
-      <tr>
-        <td><p><h3>Margins</h3></p>
-          <p>Margins are used to create space around elements, outside of any defined borders.</p></td>
+    <body>
+<!--   <div class="container"> -->
     
-      </tr>
-      <tr>
-        <td><p><h3>Borders</h3></p>
-          <p> CSS allows you to specify the style, width, and color of an element's border.</td>
+    <h3>Margins</h3>
+          <p>Margins are used to create space around separate elements, outside of any defined borders. <br>There is a margin of 25px between these two images.</p>
+           <div><img class="margin-ex" src="../images/4594786.jpg" style="width:100px;height:auto;margin:0 25px 0 0;"> <img class="margin-ex" src="../images/7194141.jpg" style="width:100px;height:auto;margin:0 0 0 25px;"></div><p>&nbsp</p>
+        
+    <h3>Borders</h3>
+          <p> Borders wrap around the content and the padding.<br>CSS allows you to specify the style, width, and color of an element's border such as the border in this example.
+        <div class="dotted">Dotted Border.</div> <p>&nbsp</p>
+  <p></p>
+    <h3>Padding</h3>
+          <p>Padding is used to create space around an element's content, occurring inside of the borders.<br>Typically used with buttons, as in the space around the word BUTTON in this example.</p>
+        <p><button>BUTTON</button></p> <p>&nbsp</p>
     
-      </tr>
-      <tr>
-        <td><p><h3>Padding</h3></p>
-          <p>Padding is used to create space around an element's content, inside of any defined borders.
-        </p></td>
-    
-      </tr>
-    
-    </table></div>
+<!-- </div>
 
 
 
-<div class="container">
+<div class="container"> -->
   <h3>The CSS Box Model</h3>
       <p>All HTML elements can be considered as boxes.      
       <br>In CSS, the term "box model" is used when talking about design and layout.</br>
-      <br>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+      <br>The CSS box model is essentially a box that wraps around every HTML element.<br>It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
       </p>
       
-      </div>
+<!--       </div> -->
 
   <div class="boxmodel clearfix">
   <div class="margin">
@@ -69,14 +64,14 @@
   </div>
   
   <div class="container"><p>Box Model Parts:</p>
-      <p>The box model allows us to add a border around elements, and to define space 
-  between elements.&nbsp;</p>
+      The box model allows us to add a border around elements, and to define space 
+  between elements.&nbsp;
     <ul class="box-list" style="list-style-type:none;">
-      <li><strong>Content</strong> - The content of the box, where text and images appear</li>
-      <li><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li>
-      <li><strong>Border</strong> - A border that goes around the padding and content</li>
-      <li><strong>Margin</strong> - Clears an area outside the border. The margin is 
-      transparent</li>
+      <li><strong>Margin</strong> - The area outside the border. The margin is transparent.</li>
+      <li><strong>Border</strong> - The edge, like a line that goes around the padding.</li>
+      <li><strong>Padding</strong> - The area around the content, within the border. The padding is transparent.</li>
+      <li><strong>Content</strong> - The innermost part of the box model. This is where text and images appear.</li>
+      
     </ul>
 </div>
   
