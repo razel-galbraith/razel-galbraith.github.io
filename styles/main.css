@@ -68,7 +68,7 @@ h1 {
 .main {
   background-color: #fff;
   padding: 10px 0;
-  height: 12rem auto; 
+  height: auto; 
   text-align: center;
   margin: auto;
 }
@@ -94,22 +94,35 @@ div.dotted {
 /* left: 50%;
 top: 50%; */
 /* transform: translate(-50%, -50%); */
-  width: 50vw;
+  width: 25vw;
   border: 5px dotted #004df1;
-  padding: 10px;
+  padding: 25px;
   margin: auto;
+  font-size: 1rem;
 }
 
 button {
   padding: 25px;
-  width: 150px;
+  width: 25vw;
+  font-size: 1rem;
 /*   float: none; */
 /*   margin: auto; */
 }
 
+p.code {
+  border: 2px solid black;
+  background: #FFF;
+  outline: #f714ea solid 1px;
+  color: #f714ea;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+  width:50vw;
+}
+
 .box-list {
-  text-align: justify;
-  max-width: 800px;
+  /* text-align: justify; */
+  max-width: 700px;
   padding: 10px;
 }
 
@@ -151,11 +164,10 @@ th, td {
   font-size: 1rem;
   margin: auto;
   width: 80%;
-  position: center;
 }
 
 .boxmodel .margin {
-  background: #e18888;
+  background: #ef6464;
   padding: 45px;
   width: 100%;
   height: 100%;
@@ -176,7 +188,7 @@ th, td {
   text-align: center;
 }
 .boxmodel .border {
-  background: #e0e188;
+  background: #c24705;
   padding: 45px;
   width: 100%;
   height: 100%;
@@ -233,7 +245,7 @@ th, td {
 @media screen and (max-width: 768px) {
 .boxmodel .margin {
   padding: 35px;
-  background: #cf2626;
+  background: #9c2cf8;
 }
 .boxmodel .margin:before {
   font-size: .75em;
@@ -242,7 +254,7 @@ th, td {
 }
 .boxmodel .border {
   padding: 35px;
-  background: #edef36;
+  background: #e736ef;
 }
 .boxmodel .border:before {
   font-size: .75em;
@@ -251,7 +263,7 @@ th, td {
 }
 .boxmodel .padding {
   padding: 35px;
-  background: #e49403;
+  background: #f38ccf;
 }
 .boxmodel .padding:before {
   font-size: .75em;
@@ -306,7 +318,7 @@ li a:hover:not(.active) {
 @media screen and (max-width: 360px) {
 .boxmodel .margin {
   padding: 25px;
-  background: #960606;
+  background: #c41414;
 }
 .boxmodel .margin:before {
   font-size: 0.75em;
@@ -379,7 +391,7 @@ li a:hover:not(.active) {
 @media screen and (max-width: 320px) {
 .boxmodel .margin {
   padding: 25px;
-  background: #960606;
+  background: #028119;
 }
 .boxmodel .margin:before {
   font-size: 0.75em;
@@ -388,7 +400,7 @@ li a:hover:not(.active) {
 }
 .boxmodel .border {
   padding: 25px;
-  background: #d3db00;
+  background: hsl(152, 100%, 56%);
 }
 .boxmodel .border:before {
   font-size: 0.75em;
@@ -397,7 +409,7 @@ li a:hover:not(.active) {
 }
 .boxmodel .padding {
   padding: 25px;
-  background: #e95303;
+  background: #03b7e9;
 }
 .boxmodel .padding:before {
   font-size: 0.75m;
@@ -453,9 +465,8 @@ li a:hover:not(.active) {
 .container {
   display: flex;
   flex-direction: column;
-/*   text-align: center;  */
-/*   float: none; */
-  margin: auto;
+  float: none;
+  margin: auto; 
 }
 
 /* Core */
@@ -466,7 +477,7 @@ li a:hover:not(.active) {
   background-color: #ffffff;
   padding: 10px 0;
   border-radius: 0px 0px 10px 10px; 
-  height: 12rem auto; 
+  height: auto; 
 }
 
 .bonus {
