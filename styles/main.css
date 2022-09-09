@@ -98,13 +98,13 @@ top: 50%; */
   border: 5px dotted #004df1;
   padding: 25px;
   margin: auto;
-  font-size: 1rem;
+  font-size: .5rem;
 }
 
 button {
   padding: 25px;
   width: 25vw;
-  font-size: 1rem;
+  font-size: .5rem;
 /*   float: none; */
 /*   margin: auto; */
 }
@@ -135,7 +135,10 @@ li.box-list {
   text-decoration: none;
 }
 
-
+.white-space {
+  width: 100%;
+  height: 10vh;
+}
 
 
 /* Technical */
