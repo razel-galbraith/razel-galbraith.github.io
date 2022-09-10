@@ -7,8 +7,8 @@
 
 html {
   font-size: 100%;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 
@@ -71,6 +71,12 @@ h1 {
   height: auto; 
   text-align: center;
   margin: auto;
+}
+
+#id {
+  display: block;
+  margin: auto;
+  padding: 100px 0 10px 0;
 }
 
 img.cute-icons {
