@@ -7,10 +7,10 @@
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
     <script src="https://kit.fontawesome.com/1f89da603f.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
     <title>Technical Blog: Margins, Borders, and Padding</title>
   </head>
   
@@ -38,7 +38,7 @@
   
     <h3>Margins</h3>
           <p>Margins are used to create space around separate elements, outside of any defined borders. This is a bit like social distancing between two people! There is a margin of 10px around each of these images.</p>
-          <p class="margin-ex"><img class="margin-ex" src="../images/4594786.jpg"> <img class="margin-ex" src="../images/7194141.jpg"></p>
+          <p class="margin-ex"><img class="margin-ex" src="../images/4594786.jpg" alt="Margin Image Example"> <img class="margin-ex" src="../images/7194141.jpg" alt="Margin Image Example"></p>
            <p>It might look like this in your HTML/CSS code:</p><p class="code"><code>img {
             margin: 10px;
           }</code></p><p>&nbsp</p>
@@ -74,17 +74,17 @@
       
 
 
-  <div class="boxmodel clearfix">
+  <div class="boxmodel">
   <div class="margin">
     <div class="border theme">
       <div class="padding">
-        <div class="content clearfix"></div>
+        <div class="content"></div>
        </div>
     </div>
   </div>
   </div>
   
-  <div class="container"><p><strong>Box Model Parts:</strong></p>
+<p><strong>Box Model Parts:</strong></p>
       The box model shows us visually how a border wraps around elements, and defines the space between elements.<br>
     <ul class="box-list" style="list-style-type:none;">
       <li><strong>Margin: </strong>The area outside the border. The margin is transparent.</li>
@@ -93,7 +93,7 @@
       <li><strong>Content: </strong>The innermost part of the box model. This is where text and images appear.</li>
       
     </ul>
-</div>
+
 <span class="bonus">Bonus!</span> Watch <strong>@media</strong> queries in action by resizing this window or switching your device, and watching the Box Model!
           <p>
 </div>

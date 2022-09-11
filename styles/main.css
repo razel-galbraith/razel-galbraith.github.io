@@ -185,7 +185,7 @@ p.quotes {
 }
 
 .box-list {
-  /* text-align: justify; */
+  text-align: justify;
   max-width: 700px;
   padding: 0;
 }
@@ -196,7 +196,7 @@ li.box-list {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+ 
 }
 
 .blog-post {
@@ -340,6 +340,12 @@ th, td {
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
+  .blog-post {
+    height: auto; 
+    text-align: justify;
+    margin: 5vw;
+  }
+
 .boxmodel .margin {
   padding: 35px;
   background: #9c2cf8;
@@ -421,6 +427,12 @@ li a:hover:not(.active) {
 }
 
 @media screen and (max-width: 360px) {
+  .blog-post {
+    height: auto; 
+    text-align: justify;
+    margin: 0;
+  }
+
   
 .boxmodel .margin {
   padding: 25px;
@@ -470,6 +482,12 @@ li a:hover:not(.active) {
 }
 
 @media screen and (max-width: 320px) {
+  .blog-post {
+    height: auto; 
+    text-align: justify;
+    margin: 0;
+  }
+
 .boxmodel .margin {
   padding: 25px;
   background: #028119;
