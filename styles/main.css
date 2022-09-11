@@ -572,6 +572,32 @@ img.margin-ex {
   background-color: #f714ea;
 }
 
+.next a {
+  float: right;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+.next:hover a {
+  color: #000;
+  background-color: #e18888; 
+}
+
+.previous a {
+  float: left;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+.previous:hover a {
+  color: #000;
+  background-color: #e18888; 
+}
+
 .footer-icon {
   padding: 0.5rem;
   color: inherit;
