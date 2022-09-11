@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
+    <script src="https://kit.fontawesome.com/1f89da603f.js" crossorigin="anonymous"></script>
     <title>Technical Blog: Margins, Borders, and Padding</title>
-    
-
-    
-  <nav>
-    <ul class="topnav">
-      <li><a href="about-me.html">About Me</a></li>
-      <li><a class="active" href="html-css.html">Technical</a></li>
-      <li><a href="#">Core</a></li>
-      <li style="float:right"><a href="../index.html">Home</a></li>
-    </ul>
-  </nav>
+  </head>
+  
+  <div class="navbar">
+    <a href="about-me.html">About Me</a>
+    <a href="html-css.html" class="active">Technical</a>
+    <a href="../index.html" style="float:right">Home</a>
+    <div class="dropdown">
+    <button class="dropbtn">Core</button> 
+      <div class="dropdown-content">
+      <a href="identity-values.html">Identity & Values</a>
+      <a href="learning-plan.html">Learning Plan</a>
+      </div> 
+    </div>
+</div>
     
     <div class="main">
       <h1>TECHNICAL BLOG</h1>
@@ -27,17 +30,17 @@
 
     <body>
 
-<div id="content">    
+<div class="blog-post">    
   
     <h3>Margins</h3>
-          <p>Margins are used to create space around separate elements, outside of any defined borders. This is a bit like social distancing between two people!<br>There is a margin of 25px between these two images.</p>
-           <div><img class="margin-ex" src="../images/4594786.jpg" style="width:100px;height:auto;margin:10px 25px 0 10px;"> <img class="margin-ex" src="../images/7194141.jpg" style="width:100px;height:auto;margin:10px 10px 0 25px;"></div>
+          <p>Margins are used to create space around separate elements, outside of any defined borders. This is a bit like social distancing between two people! There is a margin of 10px around each of these images.</p>
+          <p class="margin-ex"><img class="margin-ex" src="../images/4594786.jpg"> <img class="margin-ex" src="../images/7194141.jpg"></p>
            <p>It might look like this in your HTML/CSS code:</p><p class="code"><code>img {
-            margin: 25px;
+            margin: 10px;
           }</code></p><p>&nbsp</p>
         
     <h3>Borders</h3>
-          <p> Borders wrap around the content and the padding. Just like a photo frame containing a  picture inside. <br>CSS allows you to specify the style, width, and color of an element's border such as the border in this example.
+          <p> Borders wrap around the content and the padding. Just like a photo frame containing a  picture inside. CSS allows you to specify the style, width, and color of an element's border such as the border in this example.</p>
           <div class="dotted">DOTTED BORDER</div>           
         <p>It might look like this in your HTML/CSS code:</p>
         <p class="code"><code>p {
@@ -46,22 +49,23 @@
 }</code></p><p>&nbsp</p>
   <p></p>
     <h3>Padding</h3>
-          <p>Padding is used to create space around an element's content, occurring inside of the borders. Just like a protective cushion around the content!<br>Typically used with buttons, as in the space around the word BUTTON in this example.</p>
-        <button type="button">BUTTON</button><p>It might look like this in your HTML/CSS code:</p>
+          <p>Padding is used to create space around an element's content, occurring inside of the borders. Just like a protective cushion around the content. Typically used with buttons, as in the space around the word BUTTON in this example.</p>
+        <center><button class="button-example">BUTTON</button></center></p></div><p>It might look like this in your HTML/CSS code:</p>
         <p class="code"><code>
   button {
   padding: 25px; }</code></p><p>&nbsp</p>
   <p></p>
+  </div>
     
 
 
 
 
-<div class="container"> 
+<div class="blog-post"> 
   <h3>The CSS Box Model</h3>
       <p> HTML elements can be thought of as <em>boxes</em>.      
-      <br>In CSS, the term "box model" is used when talking about design and layout.</br>
-      <br>The CSS box model is essentially a box that wraps around every HTML element.<br>It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+      In CSS, the term "box model" is used when talking about design and layout.
+      The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
       </p>
       
 
@@ -79,20 +83,25 @@
   <div class="container"><p><strong>Box Model Parts:</strong></p>
       The box model shows us visually how a border wraps around elements, and defines the space between elements.<br>
     <ul class="box-list" style="list-style-type:none;">
-      <li><strong>Margin</strong> - The area outside the border. The margin is transparent.</li>
-      <li><strong>Border</strong> - The edge, like a line that goes around the padding.</li>
-      <li><strong>Padding</strong> - The area around the content, within the border. The padding is transparent.</li>
-      <li><strong>Content</strong> - The innermost part of the box model. This is where text and images appear.</li>
+      <li><strong>Margin: </strong>The area outside the border. The margin is transparent.</li>
+      <li><strong>Border: </strong>The edge, like a line that goes around the padding.</li>
+      <li><strong>Padding: </strong>The area around the content, within the border. The padding is transparent.</li>
+      <li><strong>Content: </strong>The innermost part of the box model. This is where text and images appear.</li>
       
     </ul>
 </div>
-
+<span class="bonus">Bonus!</span> Watch <strong>@media</strong> queries in action by resizing this window or switching your device, and watching the Box Model!
+          <p>
 </div>
   <div class="white-space"></div>
   
     <div class="footer">
-      <p><span class="bonus">Bonus!</span> Watch <strong>@media</strong> queries in action by resizing this window or switching your device, and watching the Box Model!</p>
-    </div>
+      
+      <p><a class="footer-icon" href="https://github.com/razel-galbraith" target=”_blank”>
+        <i class="fa-brands fa-github"></i></a>
+            <a class="footer-icon" href="mailto:razel.blaza@gmail.com">
+              <i class="fa-solid fa-envelope"></i></a></p>
+</div>
   
   </body>
     

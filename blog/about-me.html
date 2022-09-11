@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
+    <script src="https://kit.fontawesome.com/1f89da603f.js" crossorigin="anonymous"></script>
     <title>About Me</title>
     
 <body>
     
-  <nav>
-    <ul class="topnav">
-      <li><a class="active" href="about-me.html">About Me</a></li>
-      <li><a href="html-css.html">Technical</a></li>
-      <li><a href="#contact">Core</a></li>
-      <li style="float:right"><a href="../index.html">Home</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <a href="about-me.html" class="active">About Me</a>
+    <a href="html-css.html">Technical</a>
+    <a href="../index.html" style="float:right">Home</a>
+    <div class="dropdown">
+    <button class="dropbtn">Core</button> 
+      <div class="dropdown-content">
+      <a href="identity-values.html">Identity & Values</a>
+      <a href="learning-plan.html">Learning Plan</a>
+      </div> 
+    </div>
+</div>
     
     <div class="main">
       <h1>ABOUT ME</h1>
@@ -36,5 +41,12 @@
     </div>
   
   </body>
-    
+  <footer>
+    <div class="footer">
+      <p><a class="footer-icon" href="https://github.com/razel-galbraith" target=”_blank”>
+        <i class="fa-brands fa-github"></i></a>
+        <a class="footer-icon" href="mailto:razel.blaza@gmail.com">
+        <i class="fa-solid fa-envelope"></i></a></p>
+    </div>
+</footer>
 </html>
