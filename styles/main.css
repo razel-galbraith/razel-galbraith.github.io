@@ -100,6 +100,7 @@ h1 {
   text-shadow: 3px 3px 3px #ababab;
 }
 
+
 h4 {
   
   padding: 0.5em 0 0.5em 0.25em;
@@ -114,6 +115,7 @@ h4 {
   text-align: center;
   margin: auto;
 }
+
 
 
 img.cute-icons {
@@ -216,6 +218,8 @@ li.box-list {
   margin: auto; 
   margin: 0 10vw 0 10vw;
 }
+
+
 
 /* Technical */
 
@@ -320,6 +324,8 @@ th, td {
 }
 
 /* About Me */
+
+
 
 #gallery {
   line-height:0;
@@ -563,6 +569,8 @@ img.margin-ex {
 .next a {
   float: right;
   color: #fff;
+  background-color: #333;
+  border-radius: 10px;
   font-size: 16px;
   padding: 10px;
   text-decoration: none; 
@@ -573,11 +581,14 @@ img.margin-ex {
   color: #fff;
   background-color: #e18888; 
   text-decoration: none; 
+  border-radius: 10px;
 }
 
 .previous a {
   float: left;
   color: #fff;
+  background-color: #333;
+  border-radius: 10px;
   font-size: 16px;
   padding: 10px;
   text-decoration: none; 
