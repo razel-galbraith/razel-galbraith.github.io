@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Technical Blog Part 1 HTML & CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
+    <script src="https://kit.fontawesome.com/1f89da603f.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <title>Technical Blog: Margins, Borders, and Padding</title>
+  </head>
+  
+  <div class="navbar">
+    <a href="../index.html" style="float:right">Home</a>
+    <a href="about-me.html">About Me</a>
+    <div class="dropdown active">
+    <button class="dropbtn">Technical</button>
+    <div class="dropdown-content">
+      <a href="html-css.html">HTML & CSS</a>
+      <a href="javascript-dom.html">JavaScript & The DOM</a>
+      </div> 
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">Core</button> 
+      <div class="dropdown-content">
+      <a href="identity-values.html">Identity & Values</a>
+      <a href="learning-plan.html">Learning Plan</a>
+      <a href="emotional-intelligence.html">Emotional Intelligence</a>
+      </div> 
+    </div>
+  </div>
+    
+    <div class="main">
+      <h1>TECHNICAL BLOG</h1>
+      <h3>JavaScript & The DOM</h3>
+    </div>
+
+    <body>
+
+<div class="blog-post">    
+<h3>JavaScript's Relationship to HTML and CSS</h3>
+
+<center><strong>Anatomy of a Web Page</strong></center>
+
+<p>
+HTML, CSS and JavaScript work together to create the parts of a web page that users see and interact with in their browsers.
+Instead of being purely static, JavaScript gives users a dynamic web experience, adding animations and other interactive elements. A Buy Now button whick takes action with a click, a form to login with your details to enter a site, or when modal slowly comes into view are all JavaScript.
+</p>
+<p> One way to think about the relationship between these are the parts of a human body.</p>
+
+<p><strong>HTML: The Skeleton</strong></p>
+<img class="js-body" src="../images/html-bones.jpg" alt="HTML: The Skeleton">
+<p>Hypertext Markup Language (HTML) forms the bones of a website, defining the content and structure.
+  Like a human body, HTML is a skeleton, holding everything together and keeping everything in its correct place. 
+  The HTML elements are like individual bones. 
+</p>
+
+<p><strong>CSS: The Skin</strong></p>
+<img class="js-body" src="../images/css-skin.jpg" alt="CSS: The Skin">
+<p>The Cascading Style Sheets (CSS) is the skin. Providing the aesthetics and physical properties, CSS is in charge of how a website looks. Everything from backgrounds, colour schemes, fonts, spacing, layouts and more. 
+CSS can be written into the HTML, but best practice is to give it its own separate .css file for better flow and maintenance, allowing easier changes and preventing the repetition of code throughout the document.
+</p>
+
+<p><strong>JavaScript: The Muscles</strong></p>
+<img class="js-body" src="../images/javascript-muscles.jpg" alt="JavaScript: The Muscles">
+</p>
+JavaScript are like the muscles, providing movement and actions for our head and limbs. 
+Like CSS, JavaScript can be hard-coded into the HTML but ideally should have its own file to allow reusability and maintenance.
+</p>
+<p>&nbsp</p>
+<h3>Control Flow, Loops, Arrays, and Objects</h3>
+<p>The following are some basic elements of JavaScript.</p>
+<p><strong>Control Flow</strong></p>
+The order in which things are done, so that they remain (mostly) predictable.
+JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application. This chapter provides an overview of these statements.
+
+
+<p><strong>Loops</strong></p>
+<p>Loops offer a quick and easy way to do something repeatedly. This chapter of the JavaScript Guide introduces the different iteration statements available to JavaScript.
+
+  You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction, then Y steps in another. For example, the idea "Go five steps to the east" could be expressed this way as a loop:
+  
+  <p class="code">for (let step = 0; step < 5; step++) {<br>
+    &nbsp // Runs 5 times, with values of step 0 through 4.<br>
+    &nbsp console.log('Walking east one step');<br>
+  }
+</p>
+  There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!)
+  
+  The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.
+  
+  </p>
+<p><strong>Arrays</strong></p>
+<p>An ordered collection of data in which each piece is referred to as an 'element', and can be accessed by its position in the array. This is referred to as the element's 'index'. In arrays the index begins at 0, so the first element is at index 0, the second at 1, and so on.
+Arrays are written as comma seperated values, contained within square brackets, e.g. [1, 2, 3]
+
+Arrays can contain strings, numbers, booleans, objects, and even more arrays. You can reference elements within an array by using square bracket notation and the element's index number.
+</p>
+<p class="code">let face = [lips, nose, eyes]</p>
+
+<p><strong>Objects</strong></p>
+<p>A data type containing unordered (but labeled) key/value pairs, stored within curly brackets {}. Each 'key' acts as a label for the corresponding 'value'.
+
+Key/value pairs are referred to together as a 'property'.</p>
+<p class="code">const wonderWoman = {<br>
+  &nbsp age: 1000, <br>
+  &nbsp pronouns: she/her,<br>
+  &nbsp location: 'Paradise Island'<br>
+}</p>
+Above, popcorn is the name of the object. foodType is a 'key', 'movie snack' is a 'value', and together this key/value pair is referred to as a 'property'.
+
+There are multiple ways to access or edit data from inside of an object. One common way to retrieve data from an object is by using dot notation, where we say the name of the object, followed by a dot and then the key we would like to access. For example if we wanted to know the price of popcorn we could use popcorn.price, which provides the value of 4.99. While popcorn.flavour would provide the value of 'salt'.
+<p><strong>Functions and Why They Are Useful</strong></p>
+<p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
+  A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+
+  Writing a function. For now, you’ll use regular functions which follow a specific format:
+
+  function keyword, followed by an identifier/name of the function, then brackets which optionally contain parameters separated by commas, then curly brackets inside of which is the statement(s) that define the function.
+  <p class="code">function sayHello() {<br>
+    &nbsp return "Hello Reader!"<br>
+  }<br>
+
+
+</p>
+<h3>The DOM and DevTools</h3>
+<p>The Direct Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language.
+
+  The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+  
+  Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.</p>
+
+Developer Tools, or DevTools, is one of the ways we access the DOM. DevTools also assists us with testing and debugging websites and applications. All major browsers include developer tools, which enable developers to examine the code of a web page or app and run tests and evaluate metrics related to that code. Chrome Developer Tools (DevTools for short) is the industry standard. DevTools allows us to access the DOM and assists us with testing and debugging websites and applications.
+
+Meet the Document Object Model (aka the DOM)
+What your browser displays is a web document. More specifically, to summarize the entirety of the previous sections, what you see is a collision of HTML, CSS, and JavaScript working together to create what gets shown. Digging one step deeper, under the covers, there is a hierarchical structure that your browser uses to make sense of everything going on.
+
+This structure is known (again) as the Document Object Model. Friends just call it the DOM. Below is a very simplified view of what the DOM for our earlier example would look like:
+
+Despite the simplicity, there are several things to drill in on that apply to all DOM structures in general. Your DOM is actually made up many kinds of things beyond just HTML elements. Everything that makes up your DOM is more generically known as nodes.
+
+These nodes can be elements (which shouldn't surprise you), attributes, text content, comments, document-related stuff, and various other things you simply never think about. That detail is important to someone, but that "someone" shouldn't be you and me. Almost always, the only kind of node we will care about is the element kind because that is what we will be dealing with 99% of the time. At the boring / technical level, nodes still play a role in our element-centric view.
+
+Every HTML element you want to access has a particular type associated with it, and all of these types extend from the Node base that make up all nodes:
+
+Despite the simplicity, there are several things to drill in on that apply to all DOM structures in general. Your DOM is actually made up many kinds of things beyond just HTML elements. Everything that makes up your DOM is more generically known as nodes.
+
+These nodes can be elements (which shouldn't surprise you), attributes, text content, comments, document-related stuff, and various other things you simply never think about. That detail is important to someone, but that "someone" shouldn't be you and me. Almost always, the only kind of node we will care about is the element kind because that is what we will be dealing with 99% of the time. At the boring / technical level, nodes still play a role in our element-centric view.
+
+Every HTML element you want to access has a particular type associated with it, and all of these types extend from the Node base that make up all nodes:
+<p class="code"></p>
+<p>&nbsp</p>
+<p class="previous"><a href="html-css.html"><< HTML & CSS</a></p>
+</div>
+<div class="white-space"></div>
+
+  <div class="footer">
+    
+    <p><a class="footer-icon" href="https://github.com/razel-galbraith" target=”_blank”>
+      <i class="fa-brands fa-github"></i></a>
+          <a class="footer-icon" href="mailto:razel.blaza@gmail.com">
+            <i class="fa-solid fa-envelope"></i></a></p>
+</div>
+
+</body>
+  
+</html>

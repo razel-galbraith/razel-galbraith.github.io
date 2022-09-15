@@ -169,10 +169,11 @@ p.code {
   background: #FFF;
   outline: #f714ea solid 1px;
   color: #f714ea;
+  font-family: Menlo, Monaco, Consolas, monospace;
   margin: auto;  
   padding: 20px;
-  text-align: center;
-  width:50vw;
+  text-align: justify;
+  width:40vw;
 }
 
 p.quotes {
@@ -551,6 +552,16 @@ img.margin-ex {
 
 }
 
+img.js-body
+{
+  border: 1px solid #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
 /* Footer */
