@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Technical Blog Part 1 HTML & CSS">
+    <meta name="description" content="JavaScript & The DOM">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
     <link rel="manifest" href="../images/site.webmanifest">
-    <title>Technical Blog: Margins, Borders, and Padding</title>
+    <title>JavaScript & The DOM</title>
   </head>
   
   <div class="navbar">
@@ -75,97 +75,79 @@ Like CSS, JavaScript can be hard-coded into the HTML but ideally should have its
 <h3>Control Flow, Loops, Arrays, and Objects</h3>
 <p>The following are some basic elements of JavaScript.</p>
 <p><strong>Control Flow</strong></p>
-The order in which things are done, so that they remain (mostly) predictable.
-JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application. This chapter provides an overview of these statements.
+The order in which things are done, to keep them as predictable as possible.
 
 
 <p><strong>Loops</strong></p>
-<p>Loops offer a quick and easy way to do something repeatedly. This chapter of the JavaScript Guide introduces the different iteration statements available to JavaScript.
+<p>Loops allow for a specific step to be repeated, setting the start point, increments and stop point.
+In our human example, it could be likened to an action that is repeated daily, such as brushing your hair. 
+<em>i</em> which stands for iteration is usually used, but here we can use the name <em>brush</em>.
 
-  You can think of a loop as a computerized version of the game where you tell someone to take X steps in one direction, then Y steps in another. For example, the idea "Go five steps to the east" could be expressed this way as a loop:
   
-  <p class="code">for (let step = 0; step < 5; step++) {<br>
-    &nbsp // Runs 5 times, with values of step 0 through 4.<br>
-    &nbsp console.log('Walking east one step');<br>
+  <p class="code">for (let brush = 0; step <= 10 step++) {<br>
+    &nbsp // Brush hair with 10 strokes<br>
+    &nbsp console.log('Brush hair');<br>
   }
 </p>
-  There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. (Note that it's possible that number could be zero!)
-  
-  The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others.
-  
-  </p>
-<p><strong>Arrays</strong></p>
-<p>An ordered collection of data in which each piece is referred to as an 'element', and can be accessed by its position in the array. This is referred to as the element's 'index'. In arrays the index begins at 0, so the first element is at index 0, the second at 1, and so on.
-Arrays are written as comma seperated values, contained within square brackets, e.g. [1, 2, 3]
+<p>
+  There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. 
+  The various loop mechanisms offer different ways to determine the start and end points of the loop. 
+  There are various situations that are more easily served by one type of loop over the others.
+</p>
 
-Arrays can contain strings, numbers, booleans, objects, and even more arrays. You can reference elements within an array by using square bracket notation and the element's index number.
+<p><strong>Arrays</strong></p>
+<p>An ordered collection of data, which can be thought of as a numbered list that usually live inside square brackets [ ]. The data can be accessed via its position, or <strong>index</strong>. 
+  Confusingly, arrays always begin at 0. 
+
+Arrays can contain strings, numbers, booleans, objects, and even more arrays. 
 </p>
 <p class="code">let face = [lips, nose, eyes]</p>
 
 <p><strong>Objects</strong></p>
-<p>A data type containing unordered (but labeled) key/value pairs, stored within curly brackets {}. Each 'key' acts as a label for the corresponding 'value'.
+<p>Objects are labeled key/value pairs, with no specified order, stored within curly brackets {}. <strong>wonderWoman</strong> is the name of the object. The <strong>key</strong> (age, pronouns, location) is the label for the corresponding <strong>value</strong> (1000, she/her, Paradise Island).
 
-Key/value pairs are referred to together as a 'property'.</p>
+This Key/value pair is known as a <strong>property</strong>.</p>
 <p class="code">const wonderWoman = {<br>
   &nbsp age: 1000, <br>
   &nbsp pronouns: she/her,<br>
   &nbsp location: 'Paradise Island'<br>
 }</p>
-Above, popcorn is the name of the object. foodType is a 'key', 'movie snack' is a 'value', and together this key/value pair is referred to as a 'property'.
 
-There are multiple ways to access or edit data from inside of an object. One common way to retrieve data from an object is by using dot notation, where we say the name of the object, followed by a dot and then the key we would like to access. For example if we wanted to know the price of popcorn we could use popcorn.price, which provides the value of 4.99. While popcorn.flavour would provide the value of 'salt'.
 <p><strong>Functions and Why They Are Useful</strong></p>
-<p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
-  A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
-
-  Writing a function. For now, you’ll use regular functions which follow a specific format:
-
-  function keyword, followed by an identifier/name of the function, then brackets which optionally contain parameters separated by commas, then curly brackets inside of which is the statement(s) that define the function.
+<p>A function in JavaScript performs an action or calculation, requiring input and resulting in an output. 
+  A function will have a keyword, followed by an identifier/name of the function, then brackets which may contain parameters, then the statement inside the curly brackets which defines the function.
+  It must then be <em>called</em> to be put into action.
   <p class="code">function sayHello() {<br>
     &nbsp return "Hello Reader!"<br>
   }<br>
-
-
+  <br>
+  sayHello() // Will return "Hello Reader!"
 </p>
+<p>Functions are useful because it can be called upon anywhere throughout the document, allowing for easy repetition as well as modification.</p>
 <h3>The DOM and DevTools</h3>
-<p>The Direct Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language.
+<p>
+  The Document Object Model (DOM) connects web pages to scripts or programming languages, commonly JavaScript.  It represents the hierarchical structure of a document - typically an HTML document of a web page.
+  The DOM can be thought of as a tree, with the end of each branch considered a node. These nodes contain objects, which include but are not limited to elements, attributes, text content and comments. 
+  Accessing the DOM means the document's structure, style, or content can be changed directly.
+</p>
+<p>
+Developer Tools, or DevTools, is one way to access the DOM. It allows for testing and debugging websites and applications. 
+It could be thought of as an x-ray or medical imaging device for our human analagy during surgery, allowing the insides to be visualised and operated upon.
+</p>
 
-  The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
-  
-  Nodes can also have event handlers attached to them. Once an event is triggered, the event handlers get executed.</p>
-
-Developer Tools, or DevTools, is one of the ways we access the DOM. DevTools also assists us with testing and debugging websites and applications. All major browsers include developer tools, which enable developers to examine the code of a web page or app and run tests and evaluate metrics related to that code. Chrome Developer Tools (DevTools for short) is the industry standard. DevTools allows us to access the DOM and assists us with testing and debugging websites and applications.
-
-Meet the Document Object Model (aka the DOM)
-What your browser displays is a web document. More specifically, to summarize the entirety of the previous sections, what you see is a collision of HTML, CSS, and JavaScript working together to create what gets shown. Digging one step deeper, under the covers, there is a hierarchical structure that your browser uses to make sense of everything going on.
-
-This structure is known (again) as the Document Object Model. Friends just call it the DOM. Below is a very simplified view of what the DOM for our earlier example would look like:
-
-Despite the simplicity, there are several things to drill in on that apply to all DOM structures in general. Your DOM is actually made up many kinds of things beyond just HTML elements. Everything that makes up your DOM is more generically known as nodes.
-
-These nodes can be elements (which shouldn't surprise you), attributes, text content, comments, document-related stuff, and various other things you simply never think about. That detail is important to someone, but that "someone" shouldn't be you and me. Almost always, the only kind of node we will care about is the element kind because that is what we will be dealing with 99% of the time. At the boring / technical level, nodes still play a role in our element-centric view.
-
-Every HTML element you want to access has a particular type associated with it, and all of these types extend from the Node base that make up all nodes:
-
-Despite the simplicity, there are several things to drill in on that apply to all DOM structures in general. Your DOM is actually made up many kinds of things beyond just HTML elements. Everything that makes up your DOM is more generically known as nodes.
-
-These nodes can be elements (which shouldn't surprise you), attributes, text content, comments, document-related stuff, and various other things you simply never think about. That detail is important to someone, but that "someone" shouldn't be you and me. Almost always, the only kind of node we will care about is the element kind because that is what we will be dealing with 99% of the time. At the boring / technical level, nodes still play a role in our element-centric view.
-
-Every HTML element you want to access has a particular type associated with it, and all of these types extend from the Node base that make up all nodes:
-<p class="code"></p>
-<p>&nbsp</p>
-<p class="previous"><a href="html-css.html"><< HTML & CSS</a></p>
-</div>
 <div class="white-space"></div>
 
+<p class="previous"><a href="html-css.html"><< HTML & CSS</a></p>
+</body>
+<div class="white-space"></div>
+</div>
   <div class="footer">
-    
+
     <p><a class="footer-icon" href="https://github.com/razel-galbraith" target=”_blank”>
       <i class="fa-brands fa-github"></i></a>
           <a class="footer-icon" href="mailto:razel.blaza@gmail.com">
             <i class="fa-solid fa-envelope"></i></a></p>
 </div>
 
-</body>
   
 </html>
