@@ -44,47 +44,48 @@
 <div class="blog-post">    
 <h3>JavaScript's Relationship to HTML and CSS</h3>
 
-<center><strong>Anatomy of a Web Page</strong></center>
+<strong>Anatomy of a Web Page</strong>
 
 <p>
 HTML, CSS and JavaScript work together to create the parts of a web page that users see and interact with in their browsers.
-Instead of being purely static, JavaScript gives users a dynamic web experience, adding animations and other interactive elements. A Buy Now button whick takes action with a click, a form to login with your details to enter a site, or when modal slowly comes into view are all JavaScript.
+Instead of being purely static, JavaScript gives users a dynamic web experience, adding animations and other interactive elements. A Buy Now button which takes action with a click, a form to login with your details to enter a site, or when modal slowly comes into view are all JavaScript.
 </p>
 <p> One way to think about the relationship between these are the parts of a human body.</p>
 
 <p><strong>HTML: The Skeleton</strong></p>
-<img class="js-body" src="../images/html-bones.jpg" alt="HTML: The Skeleton">
+<img class="js-body" src="../images/html-bones.png" alt="HTML: The Skeleton">
 <p>Hypertext Markup Language (HTML) forms the bones of a website, defining the content and structure.
   Like a human body, HTML is a skeleton, holding everything together and keeping everything in its correct place. 
   The HTML elements are like individual bones. 
 </p>
 
 <p><strong>CSS: The Skin</strong></p>
-<img class="js-body" src="../images/css-skin.jpg" alt="CSS: The Skin">
+<img class="js-body" src="../images/css-skin.png" alt="CSS: The Skin">
 <p>The Cascading Style Sheets (CSS) is the skin. Providing the aesthetics and physical properties, CSS is in charge of how a website looks. Everything from backgrounds, colour schemes, fonts, spacing, layouts and more. 
 CSS can be written into the HTML, but best practice is to give it its own separate .css file for better flow and maintenance, allowing easier changes and preventing the repetition of code throughout the document.
 </p>
 
 <p><strong>JavaScript: The Muscles</strong></p>
-<img class="js-body" src="../images/javascript-muscles.jpg" alt="JavaScript: The Muscles">
+<img class="js-body" src="../images/javascript-muscles.png" alt="JavaScript: The Muscles">
 </p>
-JavaScript are like the muscles, providing movement and actions for our head and limbs. 
+JavaScript are like the muscles, providing movement and actions for our head and limbs. This is the interactivity of the website, allowing for a dynamic user experience.
 Like CSS, JavaScript can be hard-coded into the HTML but ideally should have its own file to allow reusability and maintenance.
 </p>
 <p>&nbsp</p>
 <h3>Control Flow, Loops, Arrays, and Objects</h3>
 <p>The following are some basic elements of JavaScript.</p>
 <p><strong>Control Flow</strong></p>
-The order in which things are done, to keep them as predictable as possible.
+The order in which the computer runs code, to keep it as predictable as possible. This is normally  from top to bottom, starting from the first line and ending at the last line.
+That is, until it hits any statement that changes the control flow of the program such as loops, conditionals, or functions in JavaScript.
 
 
 <p><strong>Loops</strong></p>
 <p>Loops allow for a specific step to be repeated, setting the start point, increments and stop point.
 In our human example, it could be likened to an action that is repeated daily, such as brushing your hair. 
-<em>i</em> which stands for iteration is usually used, but here we can use the name <em>brush</em>.
+<strong>i</strong> which stands for iteration is usually used, but here we can use the name <strong>brush</strong>.
 
   
-  <p class="code">for (let brush = 0; step <= 10 step++) {<br>
+  <p class="code">for (let brush = 0; brush <= 10 brush++) {<br>
     &nbsp // Brush hair with 10 strokes<br>
     &nbsp console.log('Brush hair');<br>
   }
@@ -96,7 +97,7 @@ In our human example, it could be likened to an action that is repeated daily, s
 </p>
 
 <p><strong>Arrays</strong></p>
-<p>An ordered collection of data, which can be thought of as a numbered list that usually live inside square brackets [ ]. The data can be accessed via its position, or <strong>index</strong>. 
+<p>An ordered collection of data, which can be thought of as a numbered list that usually lives inside square brackets [ ]. The data can be accessed via its position, or <strong>index</strong>. 
   Confusingly, arrays always begin at 0. 
 
 Arrays can contain strings, numbers, booleans, objects, and even more arrays. 
@@ -104,7 +105,7 @@ Arrays can contain strings, numbers, booleans, objects, and even more arrays.
 <p class="code">let face = [lips, nose, eyes]</p>
 
 <p><strong>Objects</strong></p>
-<p>Objects are labeled key/value pairs, with no specified order, stored within curly brackets {}. <strong>wonderWoman</strong> is the name of the object. The <strong>key</strong> (age, pronouns, location) is the label for the corresponding <strong>value</strong> (1000, she/her, Paradise Island).
+<p>Objects are labeled key/value pairs, with no specified order, stored within curly brackets { }. Here, <strong>wonderWoman</strong> is the name of the object. The <strong>key</strong> (age, pronouns, location) is the label for the corresponding <strong>value</strong> (1000, she/her, Paradise Island).
 
 This Key/value pair is known as a <strong>property</strong>.</p>
 <p class="code">const wonderWoman = {<br>
@@ -126,18 +127,19 @@ This Key/value pair is known as a <strong>property</strong>.</p>
 <p>Functions are useful because it can be called upon anywhere throughout the document, allowing for easy repetition as well as modification.</p>
 <h3>The DOM and DevTools</h3>
 <p>
-  The Document Object Model (DOM) connects web pages to scripts or programming languages, commonly JavaScript.  It represents the hierarchical structure of a document - typically an HTML document of a web page.
+  The Document Object Model (DOM) connects web pages to scripts or programming languages, commonly JavaScript.  It represents the hierarchical structure of a document - typically the HTML document of a web page.
   The DOM can be thought of as a tree, with the end of each branch considered a node. These nodes contain objects, which include but are not limited to elements, attributes, text content and comments. 
-  Accessing the DOM means the document's structure, style, or content can be changed directly.
+  Accessing the DOM means the document's structure, style, or content can be changed directly.</p>
+  <p><center><img src="https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-the-dom-tree/Image_6_DomTree.png" width="50%" alt="The DOM Tree, thanks Learn.org"></center>
 </p>
 <p>
 Developer Tools, or DevTools, is one way to access the DOM. It allows for testing and debugging websites and applications. 
-It could be thought of as an x-ray or medical imaging device for our human analagy during surgery, allowing the insides to be visualised and operated upon.
+It could be thought of as an x-ray or medical imaging device for our human body analagy during surgery, allowing the insides to be visualised and then operated upon.
 </p>
 
 <div class="white-space"></div>
 
-<p class="previous"><a href="html-css.html"><< HTML & CSS</a></p>
+<p class="previous"><a href="html-css.html">< HTML & CSS</a></p>
 </body>
 <div class="white-space"></div>
 </div>

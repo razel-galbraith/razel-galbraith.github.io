@@ -590,13 +590,13 @@ img.margin-ex {
 
 img.js-body
 {
-  border: 1px solid #555;
+  border: none;
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
 }
 
 
