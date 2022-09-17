@@ -61,7 +61,7 @@ Instead of being purely static, JavaScript gives users a dynamic web experience,
 
 <p><strong>CSS: The Skin</strong></p>
 <img class="js-body" src="../images/css-skin.png" alt="CSS: The Skin">
-<p>The Cascading Style Sheets (CSS) is the skin. Providing the aesthetics and physical properties, CSS is in charge of how a website looks. Everything from backgrounds, colour schemes, fonts, spacing, layouts and more. 
+<p>Cascading Style Sheets (CSS) are the skin. Providing the aesthetics and physical properties, CSS is in charge of how a website looks. Everything from backgrounds, colour schemes, fonts, spacing, layouts and more. 
 CSS can be written into the HTML, but best practice is to give it its own separate .css file for better flow and maintenance, allowing easier changes and preventing the repetition of code throughout the document.
 </p>
 
@@ -73,16 +73,15 @@ Like CSS, JavaScript can be hard-coded into the HTML but ideally should have its
 </p>
 <p>&nbsp</p>
 <h3>Control Flow, Loops, Arrays, and Objects</h3>
-<p>The following are some basic elements of JavaScript.</p>
 <p><strong>Control Flow</strong></p>
 The order in which the computer runs code, to keep it as predictable as possible. This is normally  from top to bottom, starting from the first line and ending at the last line.
-That is, until it hits any statement that changes the control flow of the program such as loops, conditionals, or functions in JavaScript.
+That is, until it hits any statement that changes the control flow of the program such as loops, conditionals, or functions like those in JavaScript.
 
 
 <p><strong>Loops</strong></p>
-<p>Loops allow for a specific step to be repeated, setting the start point, increments and stop point.
-In our human example, it could be likened to an action that is repeated daily, such as brushing your hair. 
-<strong>i</strong> which stands for iteration is usually used, but here we can use the name <strong>brush</strong>.
+<p>Loops allow for a specific step to be repeated, setting the start point, increments and stop point. This can save a lot of time, as the alternative would be to rewrite or copy and paste the code over and over every time it needed to be used.</p>
+<p>In our human example, it could be likened to an action that is repeated daily, such as brushing your hair. 
+<strong>i</strong> which stands for iteration is usually used, but here we can use the name <strong>brush</strong>.</p>
 
   
   <p class="code">for (let brush = 0; brush <= 10 brush++) {<br>
@@ -91,13 +90,12 @@ In our human example, it could be likened to an action that is repeated daily, s
   }
 </p>
 <p>
-  There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. 
-  The various loop mechanisms offer different ways to determine the start and end points of the loop. 
-  There are various situations that are more easily served by one type of loop over the others.
+  There are many different types of loops, but they all essentially repeat an action a certain number of times. 
+
 </p>
 
 <p><strong>Arrays</strong></p>
-<p>An ordered collection of data, which can be thought of as a numbered list that usually lives inside square brackets [ ]. The data can be accessed via its position, or <strong>index</strong>. 
+<p>An ordered collection of data, which can be thought of as a numbered list, that usually lives inside square brackets [ ]. The data can be accessed via its position, or <strong>index</strong>. 
   Confusingly, arrays always begin at 0. 
 
 Arrays can contain strings, numbers, booleans, objects, and even more arrays. 
@@ -105,9 +103,10 @@ Arrays can contain strings, numbers, booleans, objects, and even more arrays.
 <p class="code">let face = [lips, nose, eyes]</p>
 
 <p><strong>Objects</strong></p>
-<p>Objects are labeled key/value pairs, with no specified order, stored within curly brackets { }. Here, <strong>wonderWoman</strong> is the name of the object. The <strong>key</strong> (age, pronouns, location) is the label for the corresponding <strong>value</strong> (1000, she/her, Paradise Island).
+<p>Objects are labeled key/value pairs, with no specified order, stored within curly brackets { }. Here, <strong>wonderWoman</strong> is the name of the object. 
+  The <strong>key</strong> (age, pronouns, location) is the label for the corresponding <strong>value</strong> (1000, she/her, Paradise Island).
 
-This Key/value pair is known as a <strong>property</strong>.</p>
+This key/value pair is known as a <strong>property</strong>.</p>
 <p class="code">const wonderWoman = {<br>
   &nbsp age: 1000, <br>
   &nbsp pronouns: she/her,<br>
@@ -116,13 +115,14 @@ This Key/value pair is known as a <strong>property</strong>.</p>
 
 <p><strong>Functions and Why They Are Useful</strong></p>
 <p>A function in JavaScript performs an action or calculation, requiring input and resulting in an output. 
-  A function will have a keyword, followed by an identifier/name of the function, then brackets which may contain parameters, then the statement inside the curly brackets which defines the function.
+  A function will have an identifier/name of the function and brackets which may contain <strong>parameters</strong>. The <strong>statement</strong> inside the curly brackets defines the function.
   It must then be <em>called</em> to be put into action.
   <p class="code">function sayHello() {<br>
     &nbsp return "Hello Reader!"<br>
   }<br>
+  // Will return "Hello Reader!"
   <br>
-  sayHello() // Will return "Hello Reader!"
+  sayHello() 
 </p>
 <p>Functions are useful because it can be called upon anywhere throughout the document, allowing for easy repetition as well as modification.</p>
 <h3>The DOM and DevTools</h3>
@@ -130,11 +130,11 @@ This Key/value pair is known as a <strong>property</strong>.</p>
   The Document Object Model (DOM) connects web pages to scripts or programming languages, commonly JavaScript.  It represents the hierarchical structure of a document - typically the HTML document of a web page.
   The DOM can be thought of as a tree, with the end of each branch considered a node. These nodes contain objects, which include but are not limited to elements, attributes, text content and comments. 
   Accessing the DOM means the document's structure, style, or content can be changed directly.</p>
-  <p><center><img src="https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-the-dom-tree/Image_6_DomTree.png" width="50%" alt="The DOM Tree, thanks Learn.org"></center>
+  <p><center><img src="https://curriculum-content.s3.amazonaws.com/fewpjs/fewpjs-the-dom-tree/Image_6_DomTree.png" width="70%" alt="The DOM Tree, thanks Learn.org"></center>
 </p>
 <p>
 Developer Tools, or DevTools, is one way to access the DOM. It allows for testing and debugging websites and applications. 
-It could be thought of as an x-ray or medical imaging device for our human body analagy during surgery, allowing the insides to be visualised and then operated upon.
+In our human body analogy, it could be thought of as an x-ray or medical imaging device during surgery, allowing the insides to be visualised and then operated upon.
 </p>
 
 <div class="white-space"></div>
