@@ -250,6 +250,11 @@ table {
 td {
   height: 50px;
   vertical-align: top;
+  text-align: left;
+  padding: 0.5%;
+}
+td {
+  padding: 0.5%;
 }
 
 .boxmodel {
